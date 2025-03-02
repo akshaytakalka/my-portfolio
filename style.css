@@ -92,7 +92,7 @@ ul li a:hover::before {
 }
 
 .content .right img {
-    width: 125%;
+    width: 126%;
     position: relative;
     z-index: 999;
     cursor: pointer;
@@ -233,21 +233,25 @@ h4, p {
 }
 /* Portfolio Section */
 .portfolio-sec {
-    height: 120vh;
+    padding: 40px 0; /* Reduced height for smaller size */
     background-color: burlywood;
 }
 
 .portfolio > h3 {
     color: var(--primary-color);
-    margin-bottom: 50px;
+    margin-bottom: 30px; /* Reduced margin */
+    font-size: 24px; /* Smaller heading size */
 }
 
 .portfolio-child img {
     width: 100%;
+    border-radius: 8px 8px 0 0; /* Rounded corners for the top of the image */
 }
 
 .portolio-parent {
-    gap: 30px;
+    gap: 20px; /* Reduced gap for smaller screens */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 0 20px; /* Add padding for better spacing on mobile */
 }
 
 .portfolio-child {
@@ -255,6 +259,10 @@ h4, p {
     border-radius: 8px;
     transition: 0.3s ease;
     cursor: pointer;
+    background-color: rgb(245, 237, 237); /* White background for better contrast */
+    width: 100%; /* Full width on mobile */
+    max-width: 300px; /* Limit width for larger screens */
+    margin: 10px 0; /* Add margin for spacing */
 }
 
 .portfolio-child:hover {
@@ -264,18 +272,53 @@ h4, p {
 
 .portfolio-child h3 {
     margin-top: 10px;
+    font-size: 20px; /* Smaller heading size */
 }
 
 .portfolio-child p {
     margin-top: 5px;
     line-height: 1.4;
     text-align: left;
-    padding-left: 10px;
-    padding-bottom: 10px;
+    padding: 0 10px 10px; /* Add padding for better spacing */
+    font-size: 14px; /* Smaller text size */
+
 }
 
 .portfolio-child button {
     margin: 15px;
+}
+
+.portfolio-child button:hover {
+    transform: scale(1.1);
+    background-color: lavender; /* Darker color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .portolio-parent {
+        flex-direction: column; /* Stack projects vertically on mobile */
+        align-items: center; /* Center align projects */
+    }
+
+    .portfolio-child {
+        max-width: 90%; /* Wider cards on mobile */
+    }
+
+    .portfolio > h3 {
+        font-size: 20px; /* Smaller heading size for mobile */
+    }
+
+    .portfolio-child h3 {
+        font-size: 18px; /* Smaller heading size for mobile */
+    }
+
+    .portfolio-child p {
+        font-size: 13px; /* Smaller text size for mobile */
+    }
+
+    .portfolio-child button {
+        font-size: 13px; /* Smaller button text size for mobile */
+    }
 }
 /* Experience Section */
 .experience-sec {
