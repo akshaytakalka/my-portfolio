@@ -92,7 +92,7 @@ ul li a:hover::before {
 }
 
 .content .right img {
-    width: 120%;
+    width: 125%;
     position: relative;
     z-index: 999;
     cursor: pointer;
@@ -117,32 +117,92 @@ h4, p {
     right: 10px;
 }
 
-/* About Section */
+/* About Section Styling */
 .about-me-sec {
     min-height: 70vh;
     background-color: var(--secondary-shade);
     color: var(--primary-color);
+    padding: 40px 0;
 }
 
-.about-me-sec hr {
-    border: 2px solid red;
+.about-sec {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.pd-t-30 {
+    padding-top: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w55 {
+    width: 55%;
+    margin: 10px auto;
+    border: 2px solid red; /* Red divider line */
     margin-bottom: 2rem;
 }
 
-.about-content img {
-    width: 100%;
-    transform: scaleX(-1);
+.my-t-10 {
+    margin-top: 10px;
 }
 
-.about-content ul {
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.left {
+    text-align: center;
+}
+
+.letter-spacing2 {
+    letter-spacing: 2px;
+}
+
+/* Paragraph Styling */
+.left p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--primary-color);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Skills List Styling */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
     margin-top: 25px;
     margin-bottom: 10px;
 }
 
-.about-content span {
-    color: #C6DCE4;
+.skills-list li {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    list-style: none;
 }
 
+/* Dot Styling */
 .dot {
     width: 22px;
     height: 22px;
@@ -171,7 +231,6 @@ h4, p {
 .dot-a {
     background-color: var(--accent-color);
 }
-
 /* Portfolio Section */
 .portfolio-sec {
     height: 120vh;
@@ -218,7 +277,6 @@ h4, p {
 .portfolio-child button {
     margin: 15px;
 }
-
 /* Experience Section */
 .experience-sec {
     padding: 50px 0;
