@@ -1,79 +1,87 @@
-.layout{
-    width: 80%;
-    margin: 0 auto;
-}
+/* Utility Classes */
 
-.flex{
+/* Flexbox Utilities */
+.flex {
     display: flex;
 }
 
-.space-between{
+.space-between {
     justify-content: space-between;
 }
 
-.align-center{
+.align-center {
     align-items: center;
 }
 
-.justify-center{
+.justify-center {
     justify-content: center;
 }
 
-.uppercase{
-    text-transform: uppercase;
-}
-
-.f-w-500{
-    font-weight: 500;
-}
-
-.f-w-600{
-    font-weight: 600;
-}
-
-.f-w-700{
-    font-weight: 700;
-}
-
-.letter-spacing2{
-    letter-spacing: 2px;
-}
-
-.btn2{
-    width: 140px;
-}
-
-.flex2{
-    flex: 2;
-}
-
-.flex3{
-    flex: 3;
-}
-
-.my-t-10{
-    margin-top: 10px;
-}
-
-.my-t-20{
-    margin-top: 20px;
-}
-
-.pd-t-30{
-    padding-top: 30px;
-}
-
-.w55{
+/* Width Utilities */
+.w55 {
     width: 55%;
 }
 
-.text-center{
+/* Text Utilities */
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
     text-align: center;
 }
 
+/* Font Weight Utilities */
+.f-w-400 {
+    font-weight: 400;
+}
 
-.pd-30{
+.f-w-600 {
+    font-weight: 600;
+}
+
+.f-w-700 {
+    font-weight: 700;
+}
+
+/* Letter Spacing Utilities */
+.letter-spacing1 {
+    letter-spacing: 1px;
+}
+
+.letter-spacing2 {
+    letter-spacing: 2px;
+}
+
+/* Margin Utilities */
+.my-t-10 {
+    margin-top: 10px;
+}
+
+.my-t-20 {
+    margin-top: 20px;
+}
+
+.pd-t-30 {
+    padding-top: 30px;
+}
+
+.pd-30 {
     padding: 30px;
 }
 
+/* Layout Utility */
+.layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
+/* Flex Utilities for Responsive Design */
+.flex2 {
+    flex: 2;
+}
+
+.flex3 {
+    flex: 3;
+}
